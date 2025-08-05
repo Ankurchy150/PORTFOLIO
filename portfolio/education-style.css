@@ -1,0 +1,74 @@
+/* Specific styles for the Education page */
+.education {
+    background: var(--bg-color); /* Or a different background if desired */
+    padding: 10rem 9% 2rem;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.education-box {
+    background: var(--second-bg-color);
+    padding: 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+    flex: 1 1 40rem; /* Adjust width as needed */
+    max-width: 50rem;
+}
+
+.education-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.education-box i {
+    font-size: 5rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.education-box h3 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.education-box h4 {
+    font-size: 2.2rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.education-box p {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.education-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.education-box ul li {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .education-box {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+}

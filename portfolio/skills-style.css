@@ -1,0 +1,59 @@
+/* Specific styles for the Skills page */
+.skills {
+    background: var(--second-bg-color); /* Or a different background if desired */
+    padding: 10rem 9% 2rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.skills-category {
+    background: var(--bg-color);
+    padding: 2.5rem;
+    border-radius: 2rem;
+    text-align: left;
+    border: .2rem solid var(--second-bg-color);
+    transition: .5s ease;
+}
+
+.skills-category:hover {
+    border-color: var(--main-color);
+    transform: translateY(-1rem);
+}
+
+.skills-category h3 {
+    font-size: 2.4rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.skills-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-category ul li {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.skills-category ul li i {
+    font-size: 2.2rem;
+    color: var(--main-color);
+    margin-right: 1rem;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
